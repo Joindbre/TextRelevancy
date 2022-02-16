@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  plugins:
+    image: classifier
+    ports:
+      - "8191:8191"
+    volumes:
+      - /data/literature/resources:/plugins/resources
+      - /data/literature/plugins:/plugins
+      - /data/literature/plugins/logs:/logs
